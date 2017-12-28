@@ -1,0 +1,26 @@
+#fork-navbar {
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Zilla Slab", Helvetica;
+}
+#fork-navbar a {
+    font-size: 2em;
+    padding: 16px;
+    margin-left: 32px;
+    color: #222;
+    position: absolute;
+}
+body[class*="archetype-"] #fork-navbar {
+    position: absolute;
+}
+#fork-navbar-container {
+    display: block !important;
+    margin: 5px auto 0 auto;
+    max-width: 1110px;
+}
+@media screen and (max-width: 600px) {
+    #fork-navbar { display: none; }
+}
